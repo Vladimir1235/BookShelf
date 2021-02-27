@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="tab_text_1">Books</string>
+    <string name="tab_text_2">Favorite</string>
+    <string name="book_title_placeholder">Title</string>
+    <string name="book_description_placeholder">Description</string>
+    <string name="book_year_placeholder">Year</string>
+    <string name="book_author_placeholder">Author</string>
+    <string name="book_isbn_placeholder">ISBN</string>
+
+</resources>

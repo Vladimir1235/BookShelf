@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="book"
+            type="com.android.testapp.data.Book" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    style="@style/FrameStyle"
+    android:orientation="vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:srcCompat="@android:drawable/ic_menu_report_image" />
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{book.title}"/>
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{book.author}"/>
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="100"
+        android:text="@{book.description}"/>
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{book.year}"/>
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{book.ISBN}"/>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

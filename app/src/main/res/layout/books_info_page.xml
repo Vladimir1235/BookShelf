@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="book"
+            type="com.android.testapp.data.Book" />
+    </data>
+
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    style="@style/FrameStyle">
+
+    <ImageView
+        android:id="@+id/book_main_image"
+        style="@style/EditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{book.title}"/>
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{book.author}"/>
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{book.description}"/>
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{book.year}"/>
+    <TextView
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{book.ISBN}"/>
+
+</LinearLayout>
+    </ScrollView>
+</layout>
